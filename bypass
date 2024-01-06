@@ -1,36 +1,3 @@
-// ==UserScript==
-// @name         [Working] linkvertise and krnl bypasser
-// @namespace    http://tampermonkey.net/
-// @homepageURL  https://bypass.city
-// @description  just waits 15 seconds for krnl and works fine with the other stuff 2 (it waits no time for other stuff) :)
-// @author       Discord: varram#6209
-// @match        *://*.linkvertise.com/*
-// @match        *://*.linkvertise.net/*
-// @match        *://*.link-to.net/*
-// @match        *://bypass.city/*
-// @match        http://localhost:3000/*
-// @exclude      *://publisher.linkvertise.com/*
-// @exclude      *://linkvertise.com
-// @exclude      *://linkvertise.com/search*
-// @exclude      *://blog.linkvertise.com
-// @exclude      *://blog.linkvertise.com/*
-// @exclude      https://linkvertise.com/assets/vendor/thinksuggest.html
-// @exclude      https://linkvertise.com/assets/vendor/*
-// @exclude      https://publisher.linkvertise.com/*
-// @exclude      *://link-mutation.linkvertise.com/*
-// @grant        GM_getValue
-// @grant        GM_setValue
-// @grant        GM_deleteValue
-// @grant        GM_addStyle
-// @grant        GM.getValue
-// @grant        GM_xmlhttpRequest
-// @grant        GM.setValue
-// @grant        GM.deleteValue
-// @version      11.0.6
-// @author       varram
-// @connect      bypass.city
-// @icon         https://bypass.city/favicon.ico
-// ==/UserScript==
 (() => {
   // src/bypass-city.ts
   var bypassCityListener = async () => {
